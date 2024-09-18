@@ -3,10 +3,10 @@ import streamlit as st
 import numpy as np 
 
 st.header("Book Recommender System")
-model=pickle.load(open('artifacts/model.pkl','rb'))
-book_name=pickle.load(open('artifacts/book_name.pkl','rb'))
-final_rating=pickle.load(open('artifacts/final_rating.pkl','rb'))
-pivot_table=pickle.load(open('artifacts/book_pivot.pkl','rb'))
+model=pickle.load(open('model.pkl','rb'))
+book_name=pickle.load(open('book_name.pkl','rb'))
+final_rating=pickle.load(open('final_rating.pkl','rb'))
+pivot_table=pickle.load(open('book_pivot.pkl','rb'))
 
 def fetch_poster(suggestion):
     book_name=[]
